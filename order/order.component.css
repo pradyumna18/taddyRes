@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+.container .item,ng-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+    gap:5rem;
+}
+.card img{
+    width: 120%;
+    height: 150px;
+}
+/* .card{
+    background-color: rgb(107, 105, 103);
+    width:0%;
+    padding: 10px 20px;
+    border-radius: 15px;
+
+} */
+.card button{
+    padding: 10px 15px;
+    margin-top: 5px;
+    border: none;
+    background-color: orange;
+}
+.card h3, p{
+    color:#c22929;
+}

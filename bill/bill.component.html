@@ -1,0 +1,29 @@
+<div class="container">
+  <h2>Taddy Hotel</h2>
+  <h4>Ambajogai - Latur Rd, Latur,<br> Maharashtra 413531</h4>
+  <p>Phone : +91 9021093921</p>
+     <table id="customers">
+    <tr>
+      <th>ID</th>
+      <th>Item</th>
+      <th>Price</th>
+      <th>Qty</th>
+      <th>Amount</th>
+    </tr>
+    <tr *ngFor="let item of products,let i=index">
+      <td>{{i+1}}</td>
+      <td>{{item.title}}</td>
+      <td>{{item.price}}</td>
+      <td>{{item.quantity}}</td>
+      <td>{{item.amount}}</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td></td>
+      <td>Total</td>
+      <td>${{grandTotal}}</td>
+    </tr>
+
+  </table>
+</div>
+  <!-- <button routerLink="/home">back</button> -->

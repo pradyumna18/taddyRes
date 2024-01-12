@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>FOOD ITEMS</h1>
+    <div class="item">
+        <ng-container *ngFor="let item of productList">
+            <div class="card">
+                <img src="{{item.image}}" alt="">
+                <h3>{{item.title}}</h3>
+                <p>Price :-INR{{item.price}}</p>
+                <button (click)="addToBill(item)">ADD ITEM</button>
+            </div>
+        </ng-container>
+    </div>
+</div>
